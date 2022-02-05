@@ -1,0 +1,127 @@
+.ffx {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  background-image: url("https://static.wikia.nocookie.net/finalfantasy/images/8/82/Jecht_pyrefly_vision.jpg");
+  background-size: cover;
+  color: #cfcecc;
+  padding: 20px;
+  line-height: 1.3em;
+}
+
+.ffx * {
+  margin: 0;
+  font-size: 1em;
+  font-weight: bold;
+  font-style: normal;
+  list-style-type: none;
+}
+
+.ffx .info, .ffx .choices, .ffx .battle, .ffx .subtitle {
+  width: fit-content;
+  text-align: left;
+}
+
+.ffx .info, .ffx .choices, .ffx .battle {
+  max-width: 300px;
+}
+
+.ffx .info, .ffx .choices {
+  background: rgba(54,45,88,1);
+  background: linear-gradient(0deg, rgba(54,45,88,1) 0%, rgba(70,59,127,1) 100%);
+  border-width: 3px;  
+  border-style: double;
+  border-color: #6a619a;
+  padding: 12px 30px;
+  margin: 20px auto;
+}
+
+.ffx .info *, .ffx .choices * {
+  text-shadow: 1px 1px  #000000;
+}
+
+.ffx .subtitle, .ffx .battle {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  padding: 0;
+}
+
+.ffx .battle {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.ffx .big, .ffx .subtitle {
+  max-width: 100%;
+}
+
+.ffx .subtitle {
+  margin: 20px auto;
+  font-size: 1.2em;
+}
+
+.ffx h1, .ffx h2, .ffx em, .ffx .crit .name, .ffx .crit .hp.value {
+  color: #eeb206;
+}
+
+.ffx h2{
+  text-align: center;
+}
+
+.ffx .al-bhed {
+  color: #f375e5;
+}
+
+.ffx .info li, .ffx table.choices td {
+  position: relative;
+}
+
+.ffx table.choices tr > * + * {
+  padding-left: 80px;
+}
+
+.ffx .select:before {
+  position: absolute;
+  left: -35px;
+  content: url(https://i.ibb.co/kXg3SP7/pointer.png);
+}
+
+.ffx .battle td {
+  padding: 0 5px;
+}
+
+.ffx .battle td.hp.label {
+  color: #69d2a7;
+}
+
+.ffx .battle td.mp.label {
+  color: #c8a8f4;
+}
+
+.ffx .battle td.value {
+  text-align: right;
+}
+
+.ffx .battle td.name {
+  padding-right: 100px;
+}
+
+.ffx .battle progress {
+  width: 100%;
+  height: 5px;
+  position: relative;
+  bottom: 10px;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 1px solid black;
+}
+
+.ffx .battle progress[value]::-webkit-progress-bar {
+  background-color: #000;
+}
+
+.ffx .battle progress[value]::-webkit-progress-value {
+  background-color: #eeb206;
+}
+
+.ffx .battle progress[value="100"]::-webkit-progress-value {
+  background-color: #ff5f01;
+}
